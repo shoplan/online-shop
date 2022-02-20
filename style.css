@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+  background-color: whitesmoke;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.column-1{
+    max-width:75%;
+}
+.column-1 .card{
+    background-color:white;
+    border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+ .column-1 .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+
+
+.column-2{
+    padding-left:30px;
+}
+
+.column-2 .card{
+    background-color:whitesmoke;
+    border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+img{
+  width: 90%;
+  height: 100px;
+  margin: 12px;
+  border-radius: 8px;
+}
+.details-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.items {
+	font-family: 'Merriweather', serif;
+	background: #f2ede7;
+	border-radius: 10px;
+	width: 100px;
+	display: flex;
+	font-size: 17px;
+	height: 25px;
+	overflow: hidden;
+}
+
+.items__control {
+	width:35px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-align: center;
+}
+
+.items__control:hover {
+    background:orange;
+    color: #FFF;
+}
+
+.items__current {
+   width: 30px;
+}
+
+/* items--small */
+.items.items--small {
+	width: 50px;
+	font-size: 16px;
+	height: 26px;
+	text-align: center;
+}
+
+.items.items--small .items__control {
+	width: 30px;
+}
+
+.items.items--small .items__current {
+	width: 30px;
+}
+
+.price {
+	text-align: left;
+}
+
+.price__weight {
+	color: #6c757d!important;
+	font-size: 70%;
+	line-height: 1;
+}
+
+.price__currency {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1;
+}
+span{
+    font-size: small;
+    color: rgb(52, 58, 54);
+}
+
+
+  .cart-item__top {
+	display: flex;
+	align-items: flex-start;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dee2e6;
+	margin-bottom: 15px;
+	flex-wrap: nowrap;
+}
+
+.cart-item__title {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+    line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.cart-item__weight {
+    color: #6c757d!important;
+    font-size: 80%;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.cart-item__details {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.cart-item__details .price__currency {
+	font-size: 18px;
+	margin-left: 15px;
+}
+
+.free {
+	color: #0EA107;
+}
+
+.total-price {
+	color: #EB5A1E;
+	font-size: 20px;
+}
+
+.tenge{
+	color: #EB5A1E;
+	
+}
+
+.none {
+	display: none;
+}
+ 
+p{
+	color: grey;
+	font-size: x-small;
+}
+
+/* Style the footer */
+footer {
+    background-color:rgb(27, 25, 25);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+  }
+  footer a{
+      color: white;
+  }
+
+
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid rgb(247, 244, 239);
+	box-sizing: border-box;
+  }
+  .err{
+	color:red;
+  }
+  
+  .container {
+	padding: 20px;
+  }
+  
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+   /*  display: none;  Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #706868;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: red;
+	cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+  }
+	
+  @keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+  }
+  
